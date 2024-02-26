@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="font-'poppins' bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 text-black transition duration-0.2s ease-in text-center m-0 p-0 w-[100vw] pt-[5vh]"
+  >
+    <div
+      class="turn-container w-[290px] h-[130px] m-auto grid grid-cols-2 grid-rows-2 relative"
+    >
+      <h3 class="col-start-1 col-end-3 m-0 font-extrabold text-5xl">
+        TURN FOR
+      </h3>
+      <!-- <div class="">
+        <h5>Select Players</h5>
+        <select class="players">
+          <option value="2 players">2 players</option>
+          <option value="computer">Computer</option>
+        </select>
+      </div> -->
+      <div
+        class="turn-box flex justify-center items-center border-solid border-8 border-black text-black font-bold text-5xl"
+      >
+        X
+      </div>
+      <div
+        class="turn-box flex justify-center items-center border-solid border-8 border-black text-black font-bold text-5xl"
+      >
+        O
+      </div>
+      <div
+        class="bg absolute bottom-0 left-0 w-[150px] h-[60px] bg-[#08D9D6] -z-10"
+      ></div>
+    </div>
+    <div
+      class="main-grid grid grid-cols-3 h-[360px] w-[360px] m-auto mt-12 border-4 border-solid border-black font-extrabold text-4xl"
+    >
+      <div class="box-align border-4 border-solid border-black cursor-pointer">
+        0
+      </div>
+      <div class="box-align border-4 border-solid border-black cursor-pointer">
+        1
+      </div>
+      <div class="box-align border-4 border-solid border-black cursor-pointer">
+        2
+      </div>
+      <div class="box-align border-4 border-solid border-black cursor-pointer">
+        3
+      </div>
+      <div class="box-align border-4 border-solid border-black cursor-pointer">
+        4 
+      </div>
+      <div class="box-align border-4 border-solid border-black cursor-pointer">
+        5
+      </div>
+      <div class="box-align border-4 border-solid border-black cursor-pointer">
+        6
+      </div>
+      <div class="box-align border-4 border-solid border-black cursor-pointer">
+        7
+      </div>
+      <div class="box-align border-4 border-solid border-black cursor-pointer">
+        8
+      </div>
+    </div>
+
+    <h2
+      class="results font-black text-transparent bg-clip-text bg-gradient-to-t from-yellow-400 via-gray-50 to-teal-300 text-4xl"
+    ></h2>
+    <button class="play-again bg-[#08D9D6] text-3xl p-2 mt-4 rounded-md">
+      Play Again
+    </button>
+    <style>
+      /* .turn-container .turn-box:nth-child(even) {
+        border-right: none;
+      } */
+      .box-align:hover {
+        background-color: #dcf2f1;
+      }
+
+      .play-again:hover {
+        padding: 10px 40px;
+        background-color: #dcf2f1;
+        /* color: black; */
+      }
+    </style>
+    <script src="script.js"></script>
+  </body>
+</html>
